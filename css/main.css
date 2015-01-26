@@ -1,0 +1,33 @@
+body {
+    height: 100%;
+}
+
+#input {
+    padding-left: 50px;
+    position: relative;
+}
+
+#inputCards {
+    height: 30vh;
+    overflow-y: scroll;
+}
+
+#pool {
+    padding-left: 15px;
+    position: static;
+}
+
+#poolCards {
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+#bestCards {
+    position: static;
+    overflow-y: auto;
+}
+
+.cardDimensions {
+    max-width: 265px;
+    max-height: 370px;
+}
