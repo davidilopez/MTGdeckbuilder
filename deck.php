@@ -57,19 +57,19 @@
             $totalManaArray = addPrefsMana($conn, $totalManaArray);
             
             
-            //second, add spells to deck
+            //second, add spells to deck (conditions are checked inside the class)
             list($totalManaArray, $spellsNeeded) = addSpellsToDeck($conn, $totalManaArray, $spellsNeeded, $colors, $colorsArray);
             
-            //calculate needed creatures
+            //calculate needed creatures (conditions are checked inside the class)
             $creaturesNeeded = $creaturesNeeded + $spellsNeeded;
             
-            //third, add creatures to deck
+            //third, add creatures to deck (conditions are checked inside the class)
             list($totalManaArray, $creaturesNeeded) = addCreaturesToDeck($conn, $totalManaArray, $creaturesNeeded, $colors, $colorsArray, $manaCurve);
             
-            //fourth, add special lands and artifacts that give mana
+            //fourth, add special lands and artifacts that give mana (conditions are checked inside the class)
             list($totalManaArray) = addSpecialLands($conn, $totalManaArray);
             
-            //last, add basic lands
+            //last, add basic lands (conditions are checked inside the class)
             addLands($totalManaArray, $conn);
             
             returnPrefsToPool($conn);
