@@ -1,5 +1,5 @@
 # MTGdeckbuilder
-Final project for the course Knowledge Engineering 2014/15, VU Amsterdam
+Final project for the course Knowledge Engineering 2014/15, VU Amsterdam. This system creates a Magic: The Gathering sealed deck based on basic deck-building principles and crowdsourced ratings of the cards.
 
 - The database is created using createDatabase.php and using classes from /php/createDB, and from /php/general
 - The Main page (index.php) loads all classes from /php/index and uses classes from /php/general. This page is used to get the 
